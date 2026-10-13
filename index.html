@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mega Fresh Ad Hub</title>
+<meta name="description" content="TV ads, live menu boards and promo cards for supermarkets, run from one web app. Designed and built by Gianlexis Quiñones.">
+<meta property="og:title" content="Mega Fresh Ad Hub">
+<meta property="og:description" content="One web app that runs every screen in a supermarket.">
+<meta property="og:image" content="https://ohitsgian21.github.io/megafresh-ad-hub/assets/poster.jpg">
+<meta name="theme-color" content="#EC1E2C">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#101012;--panel:#18181b;--line:#2b2b30;--red:#ec1e2c;--red2:#ff4a56;--text:#f4f4f6;--mute:#a4a4ae}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:400 16px/1.65 "JetBrains Mono",ui-monospace,Menlo,monospace;overflow-x:hidden;
+ background-image:radial-gradient(900px 600px at 10% -5%,rgba(236,30,44,.22),transparent 70%),radial-gradient(rgba(255,255,255,.055) 1.2px,transparent 1.3px);background-size:auto,34px 34px;background-attachment:scroll,fixed}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Poppins,system-ui,sans-serif;font-weight:700;letter-spacing:-.03em;line-height:1.08}
+.k{font-weight:700;font-size:13px;letter-spacing:.28em;color:var(--red2);text-transform:uppercase}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0}
+.brand{display:flex;align-items:center;gap:12px;font:700 19px Poppins,sans-serif;text-decoration:none}
+.brand span.i{width:40px;height:40px;border-radius:10px;background:#fff;display:grid;place-items:center;flex:none}
+.brand img{width:30px}
+.tag{font-size:12px;color:var(--mute);border:1px solid var(--line);border-radius:999px;padding:6px 12px;white-space:nowrap}
+header{padding:54px 0 30px}
+header h1{font-size:clamp(40px,7.4vw,92px);margin:18px 0 22px;max-width:14ch}
+header h1 em{font-style:normal;color:var(--red2)}
+header p{max-width:62ch;color:#cfcfd6;font-size:clamp(15px,1.5vw,18px)}
+.frame{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#000;box-shadow:0 40px 110px rgba(0,0,0,.6)}
+.hero-v{margin-top:44px}
+.hero-v video{width:100%;aspect-ratio:16/9}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:56px 0 0}
+.stats div{background:var(--panel);padding:22px 20px}
+.stats b{display:block;font:700 44px/1 Poppins,sans-serif;letter-spacing:-.03em}
+.stats span{font-size:13px;color:var(--mute)}
+section{padding:96px 0 0}
+section h2{font-size:clamp(30px,4.4vw,54px);margin:14px 0 18px;max-width:18ch}
+.lede{color:#cfcfd6;max-width:60ch}
+.tool{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,8fr);gap:44px;align-items:start}
+.tool .shots{display:grid;gap:18px}
+ul.f{list-style:none;margin-top:26px;display:grid;gap:16px}
+ul.f li{padding-left:22px;position:relative;font-size:15px;color:#cfcfd6}
+ul.f li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:9px;border-radius:2px;background:var(--red)}
+ul.f b{color:var(--text);font-weight:700}
+.bar{height:34px;background:#1d1d20;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;padding:0 13px}
+.bar i{width:10px;height:10px;border-radius:50%;background:#3a3a40}
+.bar span{margin-left:12px;font-size:11.5px;color:#8d8d96;background:#111113;border-radius:7px;padding:3px 12px}
+.cap{font-size:12.5px;color:var(--mute);margin-top:10px}
+.ads{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px;background:#050506;padding:10px;border-radius:16px;border:1px solid var(--line)}
+.ads video{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px}
+footer{margin-top:110px;border-top:1px solid var(--line);padding:46px 0 70px;display:grid;gap:10px}
+footer .by{font:700 clamp(24px,3.4vw,38px) Poppins,sans-serif;letter-spacing:-.02em}
+footer p{color:var(--mute);font-size:13.5px;max-width:74ch}
+@media (max-width:860px){.tool{grid-template-columns:1fr;gap:28px}.stats{grid-template-columns:repeat(2,1fr)}.ads{grid-template-columns:repeat(2,1fr)}section{padding-top:72px}.tag{display:none}header{padding-top:28px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="#top"><span class="i"><img src="assets/icon.png" alt=""></span>Mega Fresh Ad Hub</a>
+  <span class="tag">Showcase · source code is private</span>
+</nav>
+
+<header id="top">
+  <div class="k">Digital signage for supermarkets</div>
+  <h1>One hub runs <em>every screen</em> in the store.</h1>
+  <p>Mega Fresh Ad Hub is the web app behind the TVs at Supermercados Mega Fresh and El Mejor Supermarket. Staff sign in once and manage the ads on the screens, the hot-food menu boards and the printed promo cards from the same place.</p>
+  <div class="frame hero-v">
+    <video src="assets/promo.mp4" poster="assets/poster.jpg" controls autoplay muted loop playsinline preload="metadata"></video>
+  </div>
+  <div class="stats">
+    <div><b>9</b><span>store TVs managed</span></div>
+    <div><b>5</b><span>screen groups</span></div>
+    <div><b>8</b><span>seasonal themes</span></div>
+    <div><b>3</b><span>tools, one login</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="k">One login</div>
+  <h2>Three tools. One hub.</h2>
+  <p class="lede">After signing in, staff land on a single menu that shows what is live right now: how many TVs are online, how many dishes are on the board, and how many cards are in the current sale.</p>
+  <div class="frame" style="margin-top:34px"><div class="bar"><i></i><i></i><i></i><span>Mega Fresh Ad Hub</span></div><img src="assets/screenshots/hub.png" alt="Main menu showing the TVs, Cashier and Promo Cards services" loading="lazy"></div>
+</section>
+
+<section class="tool">
+  <div>
+    <div class="k">01 — TVs</div>
+    <h2>Every screen, grouped and scheduled.</h2>
+    <ul class="f">
+      <li><b>Screen groups.</b> TVs are organised by department, each with its own content, timing and transition.</li>
+      <li><b>Scheduled playlists.</b> Images, GIFs and video play by time of day, weekday, date range or month, with a fallback so a screen is never blank.</li>
+      <li><b>Ads that expire themselves.</b> Give a slide a start and end date and it leaves the TVs when the sale is over.</li>
+      <li><b>Random mode.</b> TVs sharing a group show different items at the same moment instead of mirroring each other.</li>
+      <li><b>Pairing by code.</b> A new TV shows a 6-digit code. Type it in, pick a group, and it starts playing.</li>
+    </ul>
+  </div>
+  <div class="shots">
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>Mega Fresh Ad Hub</span></div><img src="assets/screenshots/tvs.png" alt="TV groups overview with the seasonal theme picker" loading="lazy"></div>
+  </div>
+</section>
+
+<section>
+  <div class="k">Seasonal themes</div>
+  <h2>Seasons switch themselves.</h2>
+  <p class="lede">Ad banners and menu boards follow the calendar. Autumn, Halloween, Thanksgiving and Christmas each bring their own animated board, and any season can be forced onto every TV with one click.</p>
+  <div class="frame" style="margin-top:34px"><img src="assets/seasons.jpg" alt="The menu board in its autumn, Halloween, Thanksgiving and Christmas themes" loading="lazy"></div>
+</section>
+
+<section class="tool">
+  <div>
+    <div class="k">02 — Cashier</div>
+    <h2>Tap a dish. It’s on the TV.</h2>
+    <ul class="f">
+      <li><b>Tap to publish.</b> Every dish is one tap on or off, and the board on the TV updates straight away.</li>
+      <li><b>Built for the counter.</b> Three categories side by side with one search across all of them, and tabs on a phone.</li>
+      <li><b>Clear with undo.</b> Empty one category or the whole board for the next day in a single step.</li>
+      <li><b>Menu hours.</b> Show the board during lunch service, then hand the screen back to its ads automatically.</li>
+    </ul>
+  </div>
+  <div class="shots">
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>Mega Fresh Ad Hub</span></div><img src="assets/screenshots/cashier.png" alt="Cashier panel with three menu categories" loading="lazy"></div>
+    <div class="frame"><img src="assets/still-cashier.jpg" alt="A dish switched on in the panel and appearing on the menu board" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="tool">
+  <div>
+    <div class="k">03 — Promo Cards</div>
+    <h2>Design the sale once.</h2>
+    <ul class="f">
+      <li><b>Sale cycles.</b> Cards are organised by the store’s two-week promotions, with past cycles kept in an archive.</li>
+      <li><b>Real-world prices.</b> The price line handles deals such as “2 X $5” and “.99¢” alongside the regular price.</li>
+      <li><b>Print for the shelf.</b> Choose 6, 4 or 2 cards per Letter sheet, then print, download a PDF or share.</li>
+      <li><b>Send to TVs.</b> The same card goes onto the screens without being rebuilt.</li>
+    </ul>
+  </div>
+  <div class="shots">
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>Mega Fresh Ad Hub</span></div><img src="assets/screenshots/promo-cards.png" alt="Promo card gallery for the current cycle" loading="lazy"></div>
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>Mega Fresh Ad Hub</span></div><img src="assets/screenshots/print.png" alt="Print layout with cards-per-sheet options" loading="lazy"></div>
+  </div>
+</section>
+
+<section>
+  <div class="k">On the screens</div>
+  <h2>Real ads, playing in the aisles.</h2>
+  <p class="lede">These are the ads running in the stores today, shown the way the TVs play them.</p>
+  <div class="ads">
+    <video src="assets/ads/CarneMolida.mp4" autoplay muted loop playsinline></video>
+    <video src="assets/ads/CocaColaZero.mp4" autoplay muted loop playsinline></video>
+    <video src="assets/ads/Empanadas.mp4" autoplay muted loop playsinline></video>
+    <video src="assets/ads/Medalla.mp4" autoplay muted loop playsinline></video>
+    <video src="assets/ads/Aguacates.mp4" autoplay muted loop playsinline></video>
+    <video src="assets/ads/CoronaExtra.mp4" autoplay muted loop playsinline></video>
+  </div>
+</section>
+
+<footer>
+  <div class="k">Credits</div>
+  <div class="by">Designed and built by Gianlexis Quiñones</div>
+  <p>In production at Supermercados Mega Fresh and El Mejor Supermarket.</p>
+  <p>© 2026 Gianlexis Quiñones. All rights reserved. This page is a showcase; the application’s source code is private. Store names, logos and product imagery belong to their owners and are shown with permission.</p>
+</footer>
+</div>
+</body>
+</html>
